@@ -7,7 +7,7 @@
 using namespace std;
 
 void find_minmax(const vector<double>& numbers, double& min, double& max); //функция поиска минимума и макс
-vector<size_t> make_histogram (vector<double>numbers, size_t bin_count, double min, double max);
+vector<size_t> make_histogram (vector<double>numbers, size_t bin_count);
 void show_histogram_text(vector<size_t> bins);
 
 #endif // HISTOGRAM_H_INCLUDED

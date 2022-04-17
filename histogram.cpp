@@ -27,8 +27,11 @@ void find_minmax(const vector<double>& numbers, double& min, double& max) //функ
     }
 }
 
-vector<size_t> make_histogram (vector<double>numbers, size_t bin_count, double min, double max)
+vector<size_t> make_histogram (vector<double>numbers, size_t bin_count)
 {
+    double min, max;
+    find_minmax(numbers,min,max);
+
     vector<size_t> bins(bin_count);
     for (double number : numbers)
     {
