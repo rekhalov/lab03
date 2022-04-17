@@ -1,13 +1,16 @@
 # depslib dependency file v1.0
-1650228916 source:c:\users\user\desktop\laba03\main.cpp
+1650231539 source:c:\users\user\desktop\laba03\histogram.cpp
 	<iostream>
 	<vector>
 	<math.h>
-	<locale.h>
 	"histogram.h"
 
 1650228948 c:\users\user\desktop\laba03\histogram.h
 	<vector>
 	<iostream>
 	<math.h>
+
+1650230468 source:c:\users\user\desktop\laba03\test.cpp
+	"histogram.h"
+	<cassert>
 
