@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1650224971 source:c:\users\user\desktop\laba03\main.cpp
+	<iostream>
+	<vector>
+	<math.h>
+	<locale.h>
+
