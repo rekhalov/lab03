@@ -18,6 +18,7 @@ vector<double> input_numbers(size_t count) //функция ввода чисе�
 
 int main()
 {
+
     size_t number_count;
     cerr << "Enter number count: ";
     cin >> number_count;
@@ -31,9 +32,13 @@ int main()
     cerr << "Enter column count: ";
     cin >> bin_count;
 
+    size_t bin_height;
+    cerr << "Enter bin height: ";
+    cin >> bin_height;
+
     const auto bins = make_histogram(numbers, bin_count);
 
-    show_histogram_svg(bins);
+    show_histogram_svg(bins,bin_height);
 
     return 0;
 }
