@@ -48,10 +48,11 @@ void show_histogram_svg(const vector<size_t>& bins, size_t BIN_HEIGHT)//BIN_HEIG
         if (max_bin < bin) max_bin = bin;//больше этого значения
     }
 
+    test_height(BIN_HEIGHT,bins.size(),IMAGE_HEIGHT);
+
     for (size_t bin : bins)
     {
         size_t height = bin;
-        test_height(BIN_HEIGHT,bins.size(),IMAGE_HEIGHT);
 
         const double bin_width = BLOCK_WIDTH * bin;
 

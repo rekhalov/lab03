@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void find_minmax(const vector<double>& numbers, double& min, double& max); //функция поиска минимума и макс
+void find_minmax(const vector<double>& numbers, double& min, double& max); //ГґГіГ­ГЄГ¶ГЁГї ГЇГ®ГЁГ±ГЄГ  Г¬ГЁГ­ГЁГ¬ГіГ¬Г  ГЁ Г¬Г ГЄГ±
 vector<size_t> make_histogram (vector<double>numbers, size_t bin_count);
 void show_histogram_text(vector<size_t> bins);
 

@@ -1,5 +1,5 @@
 #include "histogram.h"
-
+#include "svg.h"
 #include <cassert>
 
 void
@@ -47,6 +47,24 @@ void test_void(){
 
 }
 
+void test_heigth_min(){
+    size_t height = 4;
+    test_height(height,4,700);
+    assert(height == 4);
+}
+
+void test_heigth_max(){
+    size_t height = 200;
+    test_height(height,4,700);
+    assert(height == (700/4));
+}
+
+void test_heigth_equal(){
+    size_t height = 175;
+    test_height(height,4,700);
+    assert(height == 175);
+}
+
 int
 main() {
     test_positive();
@@ -54,4 +72,7 @@ main() {
     test_same();
     test_onenumb();
     test_void();
+    test_heigth_min();
+    test_heigth_max();
+    test_heigth_equal();
 }
